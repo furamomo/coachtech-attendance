@@ -30,28 +30,17 @@ docker-compose up -d --build
 docker-compose exec php bash
 ```
 
-2. storage・キャッシュ用ディレクトリの作成と権限付与
-```
-mkdir -p storage/framework/cache/data
-mkdir -p storage/framework/sessions
-mkdir -p storage/framework/views
-mkdir -p bootstrap/cache
-
-chmod -R 775 storage
-chmod -R 775 bootstrap/cache
-```
-
-3. Composerのインストール
+2. Composerのインストール
 ```
 composer install
 ```
 
-4. 環境ファイル作成
+3. 環境ファイル作成
 ```
 cp .env.example .env
 ```
 
-5..envに以下を設定
+4. .envに以下を設定
 ```
 DB_CONNECTION=mysql
 DB_HOST=mysql
@@ -61,17 +50,17 @@ DB_USERNAME=attendance_user
 DB_PASSWORD=attendance_pass
 ```
 
-6.アプリケーションキーの作成
+5. アプリケーションキーの作成
 ```
 php artisan key:generate
 ```
 
-7.マイグレーションの実行
+6. マイグレーションの実行
 ```
 php artisan migrate
 ```
 
-8.シーディングの実行
+7. シーディングの実行
 ```
 php artisan db:seed
 ```
