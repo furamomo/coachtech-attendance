@@ -1,0 +1,55 @@
+.is-auth__body {
+    background-color: #eeeeee;
+}
+
+.header {
+    background-color: #000;
+}
+
+.header__inner {
+    max-width: 1540px;
+    height: 75px;
+    margin: 0 auto;
+    padding: 18px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo-image {
+    height: 32px;
+    display: block;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.header__link {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 1;
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.u-input.is-error {
+    border: 2px solid #ff4d4f;
+    background-color: #fff1f0;
+}
+
+.u-input.is-error:focus {
+    border: 2px solid #ff4d4f;
+    background-color: #fff1f0;
+}
+
+.error-list {
+    color: #ff4d4f;
+    font-size: 16px;
+}
