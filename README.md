@@ -40,7 +40,12 @@ composer install
 cp .env.example .env
 ```
 
-4. .envに以下を設定
+4. .envの権限変更
+```
+chmod 666 .env
+```
+
+5. .envに以下を設定
 ```
 DB_CONNECTION=mysql
 DB_HOST=mysql
@@ -50,17 +55,22 @@ DB_USERNAME=attendance_user
 DB_PASSWORD=attendance_pass
 ```
 
-5. アプリケーションキーの作成
+6. アプリケーションキーの作成
 ```
 php artisan key:generate
 ```
 
-6. マイグレーションの実行
+7. storageの権限変更
+```
+chmod -R 777 storage
+```
+
+8. マイグレーションの実行
 ```
 php artisan migrate
 ```
 
-7. シーディングの実行
+9. シーディングの実行
 ```
 php artisan db:seed
 ```
